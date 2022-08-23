@@ -1,2 +1,2 @@
-# script
+# Script
 Scripts and Makefiles
