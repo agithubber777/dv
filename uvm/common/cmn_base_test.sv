@@ -14,9 +14,6 @@ class cmn_base_test extends uvm_test;
 
     //  Group: Configuration Object(s)
 
-    //  Var: config_obj
-    //config_obj_t config_obj;
-
 
     //  Group: Components
 
