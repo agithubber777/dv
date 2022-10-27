@@ -10,10 +10,20 @@
     `define CMN_PKG_SV
 
 package cmn_pkg;
+    import uvm_pkg::*;
+    `include "uvm_macros.svh"
+
+    `include "cmn_macros.svh"
+
     //  Group: Typedefs
 
 
     //  Group: Parameters
+
+
+    `include "cmn_base_env_cfg.sv"
+    `include "cmn_base_env.sv"
+    `include "cmn_base_test.sv"
 
 endpackage: cmn_pkg
 
