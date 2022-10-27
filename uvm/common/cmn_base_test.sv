@@ -12,24 +12,15 @@
 class cmn_base_test extends uvm_test;
     `uvm_component_utils(cmn_base_test);
 
-    //  Group: Configuration Object(s)
+    // Group : Class members
 
-
-    //  Group: Components
-
-
-    //  Group: Variables
-
-
-    //  Group: Methods
+    // Group : External class methods
+    extern virtual function void build_phase(uvm_phase phase);
 
     // Constructor
     function new(string name = "cmn_base_test", uvm_component parent);
         super.new(name, parent);
     endfunction : new
-
-    // External methods
-    extern virtual function void build_phase(uvm_phase phase);
 
 endclass: cmn_base_test
 
