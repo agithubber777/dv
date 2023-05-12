@@ -23,6 +23,7 @@ package cmn_pkg;
 
     `include "cmn_base_env_cfg.sv"
     `include "cmn_base_env.sv"
+    `include "cmn_base_seq.sv"
     `include "cmn_base_test.sv"
 
 endpackage: cmn_pkg

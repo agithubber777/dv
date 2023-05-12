@@ -19,7 +19,7 @@ class cmn_base_env_cfg extends uvm_object;
     // Group : External class methods
     extern virtual function void build();
 
-    `uvm_object_utils_begin(proj_env_cfg)
+    `uvm_object_utils_begin(cmn_base_env_cfg)
         `uvm_field_int(has_scoreboard,  UVM_DEFAULT)
         `uvm_field_int(has_reg_model,   UVM_DEFAULT)
         `uvm_field_int(has_coverage,    UVM_DEFAULT)
@@ -35,8 +35,8 @@ endclass : cmn_base_env_cfg
 /*==============================================================================
 * build()
 ==============================================================================*/
-function proj_env_cfg::build();
-    `uvm_error(get_type_name(), "[NOT_IMPL] build method must be implemented in child class")
+function cmn_base_env_cfg::build();
+    `uvm_fatal(get_id(), "[NOT_IMPL] build method must be implemented in child class")
 endfunction: build
 
 `endif // CMN_BASE_ENV_CFG_SV

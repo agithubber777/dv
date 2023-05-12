@@ -16,6 +16,7 @@ class cmn_base_test extends uvm_test;
 
     // Group : External class methods
     extern virtual function void build_phase(uvm_phase phase);
+    // TODO : add virtual get_plusarg()
 
     // Constructor
     function new(string name = "cmn_base_test", uvm_component parent);
@@ -24,7 +25,9 @@ class cmn_base_test extends uvm_test;
 
 endclass: cmn_base_test
 
-// build_phase
+/*******************************************************************************
+* build_phase()
+*******************************************************************************/
 function void cmn_base_test::build_phase(uvm_phase phase);
     super.build_phase(phase)
 endfunction: build_phase

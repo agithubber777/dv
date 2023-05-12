@@ -1,0 +1,3 @@
+-f dut.f
+-f common.f
+-f env.f
