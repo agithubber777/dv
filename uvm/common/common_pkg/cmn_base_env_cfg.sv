@@ -32,11 +32,11 @@ class cmn_base_env_cfg extends uvm_object;
 
 endclass : cmn_base_env_cfg
 
-/*==============================================================================
+/**
 * build()
-==============================================================================*/
-function cmn_base_env_cfg::build();
-    `uvm_fatal(get_id(), "[NOT_IMPL] build method must be implemented in child class")
+*/
+function void cmn_base_env_cfg::build();
+    `uvm_erro(get_type_name(), "[NOT_IMPL] build method must be implemented in child class")
 endfunction: build
 
 `endif // CMN_BASE_ENV_CFG_SV
